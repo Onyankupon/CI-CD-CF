@@ -63,7 +63,8 @@ jobs:
              else
                return 1
              fi
-  create_infrastructure2: 
+ # Exercise: Rollback
+ create_infrastructure2: 
       docker:
         - image: amazon/aws-cli
       steps:
@@ -86,4 +87,4 @@ workflows:
      # - create_infrastructure
      # - configure_infrastructure
      # - smoke_test
-      - create_infrastructure2
+     # - create_infrastructure2
