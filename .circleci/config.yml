@@ -138,7 +138,7 @@ jobs:
         # Similarly, you can create and use $OldStackID environment variable in place of production-distro 
           command: |
             export buckethatudacity=$(cat ~/textfile.txt)
-            aws s3 rm s3://$buckethatudacity --recursive
+            aws s3 rm s3://$"{buckethatudacity}" --recursive
 # Sequential workflow
 workflows:
   # Name the workflow
